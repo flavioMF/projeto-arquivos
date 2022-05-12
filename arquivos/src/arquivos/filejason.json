@@ -1,0 +1,14 @@
+[
+  {
+    "login": "flavio",
+    "senha": "1234",
+    "cpf": "1323565544",
+    "nome": "flavio martins"
+  },
+  {
+    "login": "junior",
+    "senha": "1234",
+    "cpf": "44444444",
+    "nome": "flavio junior martins"
+  }
+]

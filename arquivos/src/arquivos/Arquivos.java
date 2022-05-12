@@ -13,17 +13,17 @@ public class Arquivos {
 		Pessoa pessoa1 = new Pessoa();
 		pessoa1.setEmail("pessoa1@gmail.com");
 		pessoa1.setIdade(50);
-		pessoa1.setNome("Alex egidio");
+		pessoa1.setNome("Flavio Martins");
 
 		Pessoa pessoa2 = new Pessoa();
 		pessoa2.setEmail("pessoa2@gmail.com");
 		pessoa2.setIdade(25);
-		pessoa2.setNome("Marcos tadeu");
+		pessoa2.setNome("Mileide Martins");
 
 		Pessoa pessoa3 = new Pessoa();
 		pessoa3.setEmail("pessoa3@gmail.com");
 		pessoa3.setIdade(40);
-		pessoa3.setNome("Maria jesus");
+		pessoa3.setNome("Eloah Martins");
 
 		/*Pode vir do banco de dados ou qualquer fonte de dados*/
 		List<Pessoa> pessoas = new ArrayList<Pessoa>();

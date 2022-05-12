@@ -11,9 +11,8 @@ import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Row;
 
 public class ApachePoi {
-
-	    public static void main(String[] args) throws Exception {
-			
+	public static void main(String[] args) throws Exception {
+		
 
 		File file = new File("C:\\workspace-curso-java\\arquivos\\src\\arquivos\\arquivo.excel.xls");
 
@@ -34,13 +33,12 @@ public class ApachePoi {
 		Pessoa pessoa3 = new Pessoa();
 		pessoa3.setEmail("pessoa3@gmail.com");
 		pessoa3.setIdade(40);
-		pessoa3.setNome("Flavio Junior");
-		
+		pessoa3.setNome("Eloah Martins");
 		
 		Pessoa pessoa4 = new Pessoa();
 		pessoa4.setEmail("pessoa4@gmail.com");
 		pessoa4.setIdade(45);
-		pessoa4.setNome("Eloah Martins");
+		pessoa4.setNome("Flavio Junior");
 
 		/* Pode vir do banco de dados ou qualquer fonte de dados */
 		List<Pessoa> pessoas = new ArrayList<Pessoa>();
@@ -60,18 +58,18 @@ public class ApachePoi {
 			
 			int celula = 0;
 			
-			Cell celNome = linha.createCell(celula ++);/*Celular 1*/
+			Cell celNome = linha.createCell(celula ++);/*Celula 1*/
 			celNome.setCellValue(p.getNome());
 			
 			
-			Cell celemail = linha.createCell(celula ++); /*Celular 2 */
+			Cell celemail = linha.createCell(celula ++); /*Celula 2 */
 			celemail.setCellValue(p.getEmail());
 			
 			
-			Cell celIdade = linha.createCell(celula ++); /*Celular 3*/
+			Cell celIdade = linha.createCell(celula ++); /*Celula 3*/
 			celIdade.setCellValue(p.getIdade());
 		
-		}/*Termino de montrar a planilha*/
+		} /*Termino de montrar a planilha*/
 		
 		FileOutputStream saida = new FileOutputStream(file);
 		hssfWorkbook.write(saida);/*Escreve planilha em arquivo*/
@@ -83,4 +81,3 @@ public class ApachePoi {
 	}
 
 }
-
